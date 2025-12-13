@@ -1,0 +1,431 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyber Wave Cafe — Lot 5 Laqio Road, Davuilevu Housing</title>
+  <meta name="description" content="Cyber Wave Cafe - Printing, Photocopying, Internet, Photo Framing A4, Project typing. Appointments: 2035009" />
+  <style>
+    :root{
+      --accent:#0b7285;
+      --accent-dark:#064e57;
+      --muted:#666;
+      --bg:#f7f7f7;
+      --card:#fff;
+      --maxw:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+ .top-logo-bar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  border-radius: 8px;
+}
+
+
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.45}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+   /* 🌐 Full-page low-poly background */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  overflow-x: hidden;
+  background: #01292d;
+  position: relative;
+  color: #fff;
+}
+
+/* Low-poly overlay */
+/* 🌐 Full-page low-poly background */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  overflow-x: hidden;
+  background:  #89F336; /* base warm orange */
+  position: relative;
+  color: #fff;
+}
+
+/* Low-poly overlay */
+/* 🌟 Full-page gold low-poly background */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  overflow-x: hidden;
+  background: #808080; /* warm gold base */
+  position: relative;
+  color: #fff;
+}
+
+/* Low-poly overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,  #89F336 0%,  #89F336 50%, #daa520 100%);
+  clip-path: polygon(
+    0% 0%, 20% 15%, 35% 5%, 50% 20%, 65% 10%, 80% 25%, 100% 0%,
+    100% 100%, 80% 85%, 65% 95%, 50% 80%, 35% 95%, 20% 85%, 0% 100%
+  );
+  opacity: 0.85;
+  z-index: 0;
+  pointer-events: none;
+  animation: polyMove 20s linear infinite alternate;
+}
+
+/* Animate polygon background */
+@keyframes polyMove {
+  0% { transform: translate(0,0) scale(1) rotate(0deg); }
+  50% { transform: translate(20px,-10px) scale(1.02) rotate(2deg); }
+  100% { transform: translate(-20px,10px) scale(1) rotate(-2deg); }
+}
+
+/* Keep content above background */
+.container, header, section, .card, footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Card styling for readability */
+.card {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(4px);
+  color: #111;
+}
+
+
+   
+header.site-hero {
+    position: relative;
+    border-radius: 20px; /* more rounded */
+    overflow: hidden;
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:480px) {
+  .top-logo-bar { top:5px; left:5px; }
+  .logo { height:50px; }
+}
+
+/* Background Image */
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 60vh;
+    min-height: 360px;
+    max-height: 700px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(0.75) contrast(1.1);
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8) contrast(1.15);
+}
+
+/* Overlay with angled gradient */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,150,136,0.35), rgba(0,72,92,0.6));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px;
+    backdrop-filter: blur(2px);
+}
+
+/* Content Card with glass effect */
+.hero-content {
+    background: rgba(255, 255, 255, 0.08); /* glass effect */
+    padding: 30px 35px;
+    border-radius: 15px;
+    max-width: 650px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+}
+#contact-heading {
+  color: #111;
+}
+
+
+/* Brand Styling */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #e0f7fa;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Tagline */
+.tag {
+    font-size: 15px;
+    opacity: 0.9;
+    color: #b2ebf2;
+    margin-top: 5px;
+}
+
+/* CTA Buttons */
+.cta-row {
+    margin-top: 25px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: linear-gradient(135deg, #00bfa5, #1de9b6);
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #1de9b6, #00bfa5);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.btn.secondary {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.25);
+    color: #ffffff;
+}
+
+.btn.secondary:hover {
+    background: rgba(255,255,255,0.25);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(-2px);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 25px;
+    }
+    .brand h1 {
+        font-size: 28px;
+    }
+    .tag {
+        font-size: 13px;
+    }
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+
+    /* services */
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,24,40,0.06)}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* contact */
+    .contact{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    @media (max-width:880px){
+      .hero-content{padding:22px}
+      .contact{grid-template-columns:1fr}
+    }
+
+    .contact-card{padding:18px;background:linear-gradient(180deg,#fff,#fbfeff);border-radius:12px}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+
+    footer{margin-top:22px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* small utilities */
+    .list{padding-left:18px;margin:8px 0}
+    .location{font-weight:700}
+    .services-grid{display:flex;flex-direction:column;gap:8px}
+    .service-pill{display:inline-block;padding:8px 10px;border-radius:999px;background:red;border:1px solid rgba(6,78,87,0.06);font-weight:600}
+
+    /* contact form (mailto fallback) */
+    form.booking{display:flex;flex-direction:column;gap:8px}
+    form.booking input, form.booking textarea{padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+    form.booking button{padding:10px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:700}
+
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="site-hero">
+       <div class="top-logo-bar">
+   <img src="images/logo.png" alt="Cyber Wave Cafe Logo" class="logo">
+</div>
+      <div class="hero-image" style="background-color: #004d4d;"></div>
+      <div class="hero-overlay">
+        <div class="hero-content container" style="max-width:var(--maxw);">
+          <div class="brand">
+         
+      <div>
+         <h1>Cyber Wave Cafe</h1>
+         <div class="tag">Lot 5 Laqio Road, Davuilevu Housing</div>
+      </div>
+
+            <div style="margin-left:auto;text-align:right">
+              <div class="service-pill">Open: Mon–Sat</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.9);margin-top:6px">Appointments: <strong>2035009</strong></div>
+            </div>
+          </div>
+
+          <p style="margin-top:12px;max-width:680px;font-size:15px;opacity:0.95">Your neighborhood internet & print shop — fast printing, photocopying, A4 photo framing, project typing, and reliable internet access on-site. We help students, business clients, and the local community get things done quickly and affordably.</p>
+
+          <div class="cta-row">
+            <a class="btn" href="#services">Our Services</a>
+            <a class="btn secondary" href="#contact">Book Appointment</a>
+            <a class="btn secondary" href="mailto:angelawati1980@gmail.com">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Meet the Team Section -->
+<section id="team" class="card" style="margin-top:22px;">
+<h2 style="margin-top:0">Meet the Team</h2>
+<p class="muted">Our dedicated team ensuring smooth service and customer satisfaction.</p>
+
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:14px;">
+<div class="card" style="text-align:center;">
+<h3>Founder: Mr.Aryan Prasad</h3>
+<p class="muted">Oversees all Cyber Wave Cafe operations and ensures quality customer service.</p>
+<p><strong>Contact:</strong> <a href="tel:9657763">9657763</a></p>
+<p><strong>Email:</strong> <a href="mailto:aryanprasad075@gmail.com">aryanprasad075@gmail.com</a></p>
+</div>
+
+
+<div class="card" style="text-align:center;">
+<h3>Operations Supervisor: Mrs.Angela Wati</h3>
+<p class="muted">The Operations Supervisor ensures smooth daily operations, supports customers, and maintains high-quality service delivery at Cyber Wave Cafe.</p>
+<p><strong>Contact:</strong> <a href="tel:2035009">2035009</a></p>
+<p><strong>Email:</strong> <a href="mailto:angelawati1980@gmail.com">angelawati1980@gmail.com</a></p>
+</div>
+<div class="card" style="text-align:center;">
+<h3>Customer Service Supervisor: Miss.Nishi Prasad</h3>
+<p class="muted">Assists customers with printing, typing, scanning, and internet services.</p>
+<p><strong>Contact:</strong> <a href="tel:2035009">2035009</a></p>
+<p><strong>Email:</strong> <a href="mailto:angelawati1980@gmail.com">angelawati1980@gmail.com</a></p>
+</div>
+</div>
+</section><br>
+
+    <section id="services" class="card">
+      <h2 style="margin-top:0">Services we provide</h2>
+      <p class="muted">A concise list of commonly requested services — if you need something not listed, call or email us.</p>
+
+      <div class="services">
+        <div class="card">
+          <h3>Printing</h3>
+          <div class="muted">Black & white and color printing: documents, posters (A4  available).</div>
+        </div>
+
+        <div class="card">
+          <h3>Photocopying</h3>
+          <div class="muted">Fast photocopying — single or bulk copy jobs, double-sided, on request.</div>
+        </div>
+
+        <div class="card">
+          <h3>Internet & Computer Use</h3>
+          <div class="muted">Pay-as-you-go internet access with modern browsers for research, emailing, and online forms.</div>
+        </div>
+
+        <div class="card">
+          <h3>Photo Framing (A4)</h3>
+          <div class="muted">A4-size photo framing services — perfect for certificates, photos, and small artwork.</div>
+        </div>
+
+        <div class="card">
+          <h3>Project Typing</h3>
+          <div class="muted">Typing and formatting of projects, assignments, CVs and reports. We can follow formatting guidelines — ask for a quote.</div>
+        </div>
+        <div class="card">
+          <h3>Full virus and malware removal service for laptops and desktop computers.</h3>
+          <div class="muted">Includes system scanning, cleaning infected files, removing harmful software, improving system performance, and installing basic protection tools. — ask for a quote.</div>
+        </div>
+        <div class="card">
+          <h3>Invitation Card Printing</h3>
+          <div class="muted">Wedding, Birthday, Pooja, Housewarming, and Graduation party invitation card printing. Custom designs available on request-ask for a quote and samples.</div>
+        </div>
+        <div class="card">
+          <h3>Holiday Programs For Kids</h3>
+           <div class="muted">Computer classes (Word, Excel, typing, etc.) available on request</div>
+        </div>
+
+      </div>
+    </section>
+
+<section id="contact" class="contact" aria-labelledby="contact-heading">
+  <div class="contact-card">
+    <h2 id="contact-heading">Contact & Appointments</h2>
+    <p class="muted">For bookings, printing quotes or any enquiries reach out below.</p>
+
+    <div style="margin-top:10px">
+      <strong>Location</strong>
+      <div class="muted location">Lot 5 Laqio Road, Davuilevu Housing</div>
+    </div>
+
+    <hr style="margin:12px 0;border:none;border-top:1px solid #eef">
+
+    <h4>Quick booking</h4>
+    <form class="booking" action="mailto:angelawati1980@gmail.com" method="get" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="text" name="phone" placeholder="Phone (e.g. 2035009)" required />
+      <textarea name="message" rows="4" placeholder="What service / preferred time & date"></textarea>
+      <button type="submit">Send booking request</button>
+    </form>
+  </div>
+
+<aside class="card" style="align-self:start">
+<h3>Opening hours</h3>
+<div class="muted">Mon — Sat: 8:30 AM — 6:00 PM<br>Sun: Closed (or by appointment)</div>
+
+
+<h3 style="margin-top:12px">Payment</h3>
+<div class="muted">Cash accepted. Inquire in-store for digital payment options.</div>
+
+
+<h3 style="margin-top:12px">Notes</h3>
+<div class="muted">Bring original IDs for printing of secure documents. Large print jobs may require advance notice.</div>
+</aside>
+</section>
+
+
+<footer>
+<div style="margin-top:6px;color:#000000;">© <strong>Cyber Wave Cafe</strong> — Lot 5 Laqio Road, Davuilevu Housing<br>Owned by <strong>Mr.Aryan Prasad</strong></div>
+<div style="margin-top:6px;color:#000000;">Contact: <a href="mailto:angelawati1980@gmail.com">angelawati1980@gmail.com</a> • Phone: <a href="tel:2035009">2035009</a></div>
+</footer>
+</main>
+</body>
+</html>
